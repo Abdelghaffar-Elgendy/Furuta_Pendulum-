@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="11/03/25||19:15:49" using="Simscape Multibody Link Version 7.4" from="SolidWorks 33.1.2"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Furuta_Project_Assembelly" uid="Furuta_Project_Assembelly" version="223">
+<AssemblyFile name="Furuta_Project_Assembelly.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="DCmotorr.stp-1" uid="DCmotorr.stp-1" entityUid="DCmotorr.stp*:*Default">
+<Transform>
+<Rotation>0 0.026135020319500036 0.99965842201869093 0 -0.99965842201869093 0.026135020319500036 1 0 0</Rotation>
+<Translation>0 0 0.071499999999999994</Translation>
+</Transform>
+</Instance>
+<Instance name="hexa-1" uid="hexa-1" entityUid="hexa*:*Default">
+<Transform>
+<Rotation>0.91615680299156232 -0.40082004981322977 -1.1374342998067695e-16 0.40082004981322977 0.91615680299156232 0 1.0912471200442089e-16 0 1</Rotation>
+<Translation>0 0 0.10750000000000003</Translation>
+</Transform>
+</Instance>
+<Instance name="Encoder Holder-2" uid="Encoder Holder-2" entityUid="Encoder Holder*:*Default">
+<Transform>
+<Rotation>0.99382509014724341 0.11095805601137548 -1.1374342998067678e-16 -0.11095805601137548 0.99382509014724341 0 1.1167966548675556e-16 0 1</Rotation>
+<Translation>0.0011095805601137533 0.0099382509014725572 0.13850000000000004</Translation>
+</Transform>
+</Instance>
+<Instance name="coupler-1" uid="coupler-1" entityUid="coupler*:*Default">
+<Transform>
+<Rotation>0.8007317523383678 -0.58865692096781053 -0.1109580560113759 -0.089399673551091713 0.065722055375511998 -0.99382509014724341 0.59231440904817168 0.8057069199367195 0</Rotation>
+<Translation>0.0047711964084891385 0.042734478876331312 0.13849999999999993</Translation>
+</Transform>
+</Instance>
+<Instance name="rod-2" uid="rod-2" entityUid="rod*:*Default">
+<Transform>
+<Rotation>0.99188197447176696 0.11095805601137605 0.062116491563556399 -0.11074111206410245 0.9938250901472433 -0.006935149070465039 -0.062502438486789824 2.2938993716904408e-16 0.99804481121000022</Rotation>
+<Translation>0.003661615848375412 0.032796227974859045 0.13850000000000001</Translation>
+</Transform>
+</Instance>
+<Instance name="encoder.stp-2" uid="encoder.stp-2" entityUid="encoder.stp*:*Default">
+<Transform>
+<Rotation>1.1309489317473313e-16 0.11095805601137548 0.99382509014724341 1.267069151979861e-16 0.99382509014724341 -0.11095805601137548 -1 1.3847330091040022e-16 0</Rotation>
+<Translation>-0.0026629933442730465 -0.023851802163534105 0.13849999999999996</Translation>
+</Transform>
+</Instance>
+<Instance name="Motor Cover-1" uid="Motor Cover-1" entityUid="Motor Cover*:*Default">
+<Transform>
+<Rotation>6.6752159355587537e-15 1.0000000000000002 0 -1.0000000000000002 6.6752159355587537e-15 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric7">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Motor Cover-1</Uid>
+</InstancePath>
+<Position>0 0 0.089999999999999997</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="point">
+<InstancePath>
+<Uid>Furuta_Project_Assembelly</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Motor Cover-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Furuta_Project_Assembelly</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric8">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>DCmotorr.stp-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Motor Cover-1</Uid>
+</InstancePath>
+<Position>0 0 0.089999999999999997</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric9">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>hexa-1</Uid>
+</InstancePath>
+<Position>0 0 -0.011999999999999997</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Motor Cover-1</Uid>
+</InstancePath>
+<Position>0 0 0.089999999999999997</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Parallel name="Parallel1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Motor Cover-1</Uid>
+</InstancePath>
+<Position>0.003446045456301677 -0.021361564131975663 0.0040000000000000001</Position>
+<Axis>1.0000000000000002 -6.843566693472934e-15 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Furuta_Project_Assembelly</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Parallel>
+<Coincident name="Coincident4">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>DCmotorr.stp-1</Uid>
+</InstancePath>
+<Position>0.020000000000000004 0 -0.0084999999999999989</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Motor Cover-1</Uid>
+</InstancePath>
+<Position>0.00022214767271569469 -0.0084970965871589178 0.091499999999999998</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Distance name="Distance1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>hexa-1</Uid>
+</InstancePath>
+<Position>0 0 -0.011999999999999997</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Motor Cover-1</Uid>
+</InstancePath>
+<Position>0 0 0.092999999999999999</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Distance>
+<Coincident name="Coincident7">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>hexa-1</Uid>
+</InstancePath>
+<Position>0.0034641016151377851 -0.0059999999999999897 0.0060000000000000053</Position>
+<Axis>0.49999999999999512 0.86602540378444171 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>Encoder Holder-2</Uid>
+</InstancePath>
+<Position>0.0059999999999999984 -0.0065358983848622506 -0.024999999999999994</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric11">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>hexa-1</Uid>
+</InstancePath>
+<Position>0 0 0.0060000000000000053</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Encoder Holder-2</Uid>
+</InstancePath>
+<Position>0 -0.010000000000000004 0.01999999999999999</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric12">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Encoder Holder-2</Uid>
+</InstancePath>
+<Position>0 0.0049999999999999992 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>encoder.stp-2</Uid>
+</InstancePath>
+<Position>0 0.039 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric13">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Encoder Holder-2</Uid>
+</InstancePath>
+<Position>0 0 0.014000000000000012</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>encoder.stp-2</Uid>
+</InstancePath>
+<Position>-0.014000000000000012 0.034000000000000002 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident9">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Encoder Holder-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>encoder.stp-2</Uid>
+</InstancePath>
+<Position>0 0.034000000000000002 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric14">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>coupler-1</Uid>
+</InstancePath>
+<Position>0 0 0.025000000000000001</Position>
+<Axis>0 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>encoder.stp-2</Uid>
+</InstancePath>
+<Position>0 0.0545 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>coupler-1</Uid>
+</InstancePath>
+<Position>0 0 0.025000000000000001</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>encoder.stp-2</Uid>
+</InstancePath>
+<Position>0 0.039 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Distance>
+<Concentric name="Concentric15">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>coupler-1</Uid>
+</InstancePath>
+<Position>0 0 0.025000000000000001</Position>
+<Axis>0 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>rod-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>rod-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>coupler-1</Uid>
+</InstancePath>
+<Position>0 0 0.025000000000000001</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Distance>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="DCmotorr.stp" uid="DCmotorr.stp*:*Default" version="114">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="DCmotorr.stp.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.02588396508381012</Mass>
+<CenterOfMass>-0.0067064145319938534 -1.9897410034927665e-05 5.2436690254368654e-05</CenterOfMass>
+<Inertia>1.8947552429003707e-06 7.8499648482962487e-06 7.8375362274521506e-06 6.27043279118276e-09 3.7257703884078479e-08 -1.3170636186136508e-08</Inertia>
+</MassProperties>
+<GeometryFile name="DCmotorr.stp_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Encoder Holder" uid="Encoder Holder*:*Default" version="391">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Encoder Holder.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.01410413044214575</Mass>
+<CenterOfMass>-5.6587638313708458e-09 -0.0071908228304549881 -0.011667536329492755</CenterOfMass>
+<Inertia>3.9142533226864328e-06 4.3780166726094484e-06 3.6976550717841576e-06 -7.1968030842200653e-07 -1.1907458128241346e-12 -1.6867844234750967e-13</Inertia>
+</MassProperties>
+<GeometryFile name="Encoder Holder_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.69803921568627447" g="0.69803921568627447" b="0.69803921568627447" a="1"/>
+<Diffuse r="0.69803921568627447" g="0.69803921568627447" b="0.69803921568627447" a="1"/>
+<Specular r="0.69803921568627447" g="0.69803921568627447" b="0.69803921568627447" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Motor Cover" uid="Motor Cover*:*Default" version="213">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Motor Cover.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.021477618036901486</Mass>
+<CenterOfMass>2.102507088961341e-06 2.1025052380846079e-06 0.050029545419065284</CenterOfMass>
+<Inertia>2.2322570192953265e-05 2.2332317728151873e-05 5.7950219249641038e-06 2.1702625305984559e-09 2.1702640407856906e-09 -2.5491843699273201e-10</Inertia>
+</MassProperties>
+<GeometryFile name="Motor Cover_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.69803921568627447" g="0.69803921568627447" b="0.69803921568627447" a="1"/>
+<Diffuse r="0.69803921568627447" g="0.69803921568627447" b="0.69803921568627447" a="1"/>
+<Specular r="0.69803921568627447" g="0.69803921568627447" b="0.69803921568627447" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="coupler" uid="coupler*:*Default" version="119">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="coupler.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0084823001646924419</Mass>
+<CenterOfMass>0 0 0.012500000000000002</CenterOfMass>
+<Inertia>5.6477981929910505e-07 5.6477981929910505e-07 2.4598670477608092e-07 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="coupler_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.8666666666666667" g="0.90980392156862744" b="1" a="1"/>
+<Diffuse r="0.8666666666666667" g="0.90980392156862744" b="1" a="1"/>
+<Specular r="0.43333333333333335" g="0.45490196078431372" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="encoder.stp" uid="encoder.stp*:*Default" version="114">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="encoder.stp.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.040577949728370602</Mass>
+<CenterOfMass>0.00013770452748886468 0.017942248535924004 9.3629125271175487e-07</CenterOfMass>
+<Inertia>8.1351677651333377e-06 7.1412007334615799e-06 8.2766069090914695e-06 -1.1519318665778997e-09 5.4752535517368726e-12 6.1138931633108943e-08</Inertia>
+</MassProperties>
+<GeometryFile name="encoder.stp_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0.37450980392156863" g="0.37450980392156863" b="0.37450980392156863" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="hexa" uid="hexa*:*Default" version="160">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="hexa.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.014800559963765531</Mass>
+<CenterOfMass>-5.1074105698312298e-05 2.9491233961844045e-05 -0.0025222364406798058</CenterOfMass>
+<Inertia>5.612688637035795e-07 5.595197660860897e-07 2.9473223697830347e-07 1.5177945864663051e-09 -2.629120767998084e-09 -1.5150215906613591e-09</Inertia>
+</MassProperties>
+<GeometryFile name="hexa_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.82745098039215681" g="0.66666666666666663" b="0.12941176470588234" a="1"/>
+<Diffuse r="0.82745098039215681" g="0.66666666666666663" b="0.12941176470588234" a="1"/>
+<Specular r="0.5792156862745097" g="0.46666666666666662" b="0.090588235294117636" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="rod" uid="rod*:*Default" version="114">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="rod.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0095966340977778758</Mass>
+<CenterOfMass>0 0.026381855048355118 0.039813147095634639</CenterOfMass>
+<Inertia>1.082044907675408e-05 1.0262788415064448e-05 6.0084551512962936e-07 -1.3778468111737288e-06 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="rod_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.8666666666666667" g="0.90980392156862744" b="1" a="1"/>
+<Diffuse r="0.8666666666666667" g="0.90980392156862744" b="1" a="1"/>
+<Specular r="0.43333333333333335" g="0.45490196078431372" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
